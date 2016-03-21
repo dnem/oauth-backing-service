@@ -1,0 +1,9 @@
+---
+applications:
+ - name: oauth-backing-service
+   memory: 128M
+   instances: 1
+   buildpack: https://github.com/cloudfoundry/go-buildpack.git
+   timeout: 90
+   env:
+     SKIP_SSL_VALIDATION: true
